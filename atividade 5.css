@@ -1,0 +1,41 @@
+header {
+    background-color: grey;
+    height: 40px;
+}
+
+body {
+    margin: 0
+}
+
+main {
+    /*border: 1px solid;*/
+    margin: auto;
+    min-width: 300px;
+    max-width: 1200px;
+    width: 50vw;
+    min-height: 100vh;
+}
+
+span,main,
+#header-conteiner {
+    border: 1px solid;
+}
+
+#header-conteiner {
+   /* border-color:blue;*/
+    margin:auto;
+    display:flex;
+    height: 40px;
+    width: 50vw;
+    align-items:center;
+    min-width: 300px;
+    max-width: 1200px;
+    justify-content: space-evenly;
+
+}
+#primeira-foto{ margin: auto;
+    min-width: 300px;
+    max-width: 1200px;
+    width: 50vw;
+    min-height: 100vh;
+}
