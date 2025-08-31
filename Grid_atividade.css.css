@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+header,
+footer {
+  background-color: #8412cf;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: auto 400px;
+  grid-template-areas:
+    "sidebar content1 content1"
+    "sidebar content2 content3";
+  gap: 10px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #36d1aa;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.main-content {
+  display: contents; /* permite os contentX usarem grid diretamente */
+}
+
+.content1 {
+  grid-area: content1;
+  background-color: #e6f7ff;
+  padding: 40px;
+  text-align: center;
+  height: auto;
+}
+
+.content2 {
+  grid-area: content2;
+  background-color: #ffe6e6;
+  padding: 80px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.content3 {
+  grid-area: content3;
+  background-color: #e6ffe6;
+  padding: 40px;
+  text-align: center;
+}
+/* Distancia*/
+.content2, .content3 {
+  margin-top: 20px; 
+  padding: 40px;
+}
+
+footer {
+  background-color: #8412cf;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Borda*/
+.sidebar, .content1, .content2, .content3, .footer, .header{
+  border: 5px solid #0f0a0a;
+}
